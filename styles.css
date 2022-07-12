@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    font-family: 'DM Sans', sans-serif;
+    font-size: 18px;
+    background-color: hsl(27, 66%, 92%);
+}
+#parent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container{
+    width: 30%;
+    max-width: 500px;
+    min-width: 360px;
+    /* margin: auto; */
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+#balance{
+    padding: 20px;
+    background-color: hsl(10, 79%, 65%);
+    border-radius: 15px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#balance-text-des{
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 8px;
+}
+#balance-text-val{
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+#balance-icon{
+    display: flex;
+}
+.circle{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%
+}
+#circle-1{
+    border: 1px solid white;
+    z-index: 1;
+}
+#circle-2{
+    background-color: hsl(25, 47%, 15%);
+    position: relative;
+    right: 20%;
+}
+
+#chart{
+    padding: 22px;
+    border-radius: 15px;
+    color: hsl(25, 47%, 15%);
+    background-color: white;
+}
+#chart-header{
+    font-size: 22px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+#chart-data{
+    display: flex;
+    justify-content: space-between;
+}
+.bar-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    height: 140px;
+    color: hsl(28, 10%, 53%);
+    font-size: 12px;
+}
+.bar-value{
+    background-color: hsl(25, 47%, 15%);
+    color: white;
+    font-size: 12px;
+    padding: 5px;
+    margin-bottom: 7px;
+    border-radius: 4px;
+    visibility: hidden;
+}
+.bar{
+    background-color: hsl(10, 79%, 65%);
+    width: 35px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+.bar:hover{
+    background-color: hsla(10, 100%, 76%, 1);
+}
+
+#bar-3:hover{
+    background-color: hsl(186, 34%, 60%);
+}
+
+hr{
+    border: 1px solid hsl(28, 10%, 90%);
+    margin: 20px 0;
+}
+
+#top-text{
+    font-size: 14px;
+    color: hsl(28, 10%, 53%);
+}
+#footer-subcontainer{
+    display: flex;
+    justify-content: space-between;
+}
+#spend-val{
+    color: hsl(25, 47%, 15%);
+    font-size: 35px;
+    letter-spacing: 1px;
+}
+#rise-text{
+    /* text-align: right; */
+    font-size: 13px;
+    color: hsl(28, 10%, 53%);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+#rise-percent{
+    color: hsl(25, 47%, 15%);
+    font-weight: 900;
+}

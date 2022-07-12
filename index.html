@@ -1,21 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+
   <title>Frontend Mentor | Expenses chart component</title>
   <link rel="stylesheet" href="styles.css">
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
+
 <body>
-  <script src="app.js"></script>  
+  <div id="parent">
+
+    <div id="container">
+      <div id="balance">
+        <div id="balance-text">
+          <div id="balance-text-des">My balance</div>
+          <div id="balance-text-val">$921.48</div>
+        </div>
+        <div id="balance-icon">
+          <div id="circle-1" class="circle"></div>
+          <div id="circle-2" class="circle"></div>
+        </div>
+      </div>
+      <div id="chart">
+        <div id="chart-header">Spending - Last 7 days</div>
+        <div id="chart-data"></div>
+        <hr>
+        <div id="footer">
+          <div id="top-text">Total this month</div>
+          <div id="footer-subcontainer">
+            <h1 id="spend-val">$478.33</h1>
+            <div id="rise-text">
+              <div id="rise-percent">+2.4%</div>
+              <div>from last month</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
 </body>
+
 </html>
